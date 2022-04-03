@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/scannerFragment2">
+    <fragment
+        android:id="@+id/scannerFragment2"
+        android:name="com.example.juli.overview.ScannerFragment"
+        android:label="Scanner" >
+        <action
+            android:id="@+id/action_scannerFragment2_to_overviewFragment3"
+            app:destination="@id/overviewFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/overviewFragment3"
+        android:name="com.example.juli.overview.OverviewFragment"
+        android:label="Te amo" >
+        <action
+            android:id="@+id/action_overviewFragment3_to_scannerFragment2"
+            app:destination="@id/scannerFragment2" />
+    </fragment>
+</navigation>
